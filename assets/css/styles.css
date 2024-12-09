@@ -1,0 +1,360 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --texte-gd: 30px;
+    --texte-md: 25px;
+    --text-sm:  18px;
+}
+
+
+html, body{
+    height: 630vh;
+    width: 100vs;
+    font-family: "Sour Gummy", sans-serif;
+
+   
+}
+
+h3{
+    font-size: var(--text-sm);
+}
+
+hr {
+    height: 40px;
+    background-color: #43CAD9;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;  
+    background: linear-gradient(to bottom,
+    #ffff 0%,
+    #eeeeee 50%,
+    #e1e1e1 100%);  
+
+}
+
+.bouton{
+    position: relative;
+
+    border-radius: 15px;
+    background: #eaeaea;
+    box-shadow:  13px 13px 26px #cccccc,
+        -13px -13px 26px #ffffff;
+    font-size: var(--texte-md);
+    width: fit-content;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 530ms ease-in-out;
+    overflow: hidden;
+    
+}
+
+.bouton .fond-anime {
+   position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(185, 185, 185);
+    z-index: 1;
+    transform: translate(0, 200px);
+    transition: all 350ms;
+
+}
+
+.bouton span {
+    position: relative;
+    z-index: 2;
+}
+
+.bouton:hover {
+    border-radius: 25px;
+    background-color:white;
+    color: white;
+}
+
+.bouton:hover .fond-anime {
+    transform: translate(0, 0);
+}
+
+
+.acceuil {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+    font-size: 34px;
+
+}
+
+.acceuil h1 {
+    font-size: var(--texte-gd);
+    color: rgb(183, 0, 0);
+}
+
+video {
+    height: 60vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+img {
+    width: 60vh;
+    
+    cursor: pointer;
+    object-fit: contain;
+}
+
+section2 {
+    min-height: 100vh;
+    border: 3px solid rgb(255, 255, 172);
+}
+
+.bunny {
+    height: 100vh;
+    display: flex;
+    gap: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.bunny h1 {
+    font-size: 2rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
+.bunny img{
+    transition: all 350ms;
+    filter: saturate(20%) brightness(40%);
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.bunny img:hover {
+    filter: saturate(150%) brightness(100%);
+    transition: 1000ms ;
+}
+
+.solde {
+    min-height: 100vh;
+}
+
+.solde img {
+    max-height: 36vh;
+}
+
+td {
+    color: red;
+    text-align: center;
+    font-size: var(--texte-md);
+  
+}
+
+.plantes {
+    
+
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: linear-gradient(to bottom,
+    rgba(69, 98, 69, 0.704) 0%,
+    rgb(141, 177, 141) 50%,
+    rgb(191, 253, 191) 100%);
+    color: white;
+}
+.plantes hr {
+    border: 20px solid rgb(111, 150, 111) ;
+}
+
+.plantes img {
+    border-radius: 30px;
+    max-width: 43vh;
+
+}
+
+.plantes h1 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    font-size: var(--texte-gd);
+    padding: 3rem;
+}
+
+.plantes h2 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    font-size: var(--texte-md);
+    padding: 4rem;
+    color: #1e6971;
+}
+
+ 
+
+.populaire {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.populaire img {
+    display: flex;
+    justify-content: center;
+}
+
+.populaire h1 {
+    font-size: var(--texte-md);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+form {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+form section {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 6px solid black;
+    height: 100vh;
+}
+
+p{
+    font-size: var(--texte-md);
+}
+
+label {
+    font-size: var(--texte-md);
+}
+
+form .input-group {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+form .btn-group {
+    display: flex;
+}
+
+form input,
+form textarea,
+form select {
+    border: 2px solid #43CAD9;
+    width: 50%;
+    border-radius: 25px;
+
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #43CAD9;
+}
+
+form input + .message-erreur,
+form textarea + .message-erreur,
+form select + .message-erreur {
+    display: none;
+}
+
+form input:invalid,
+form textarea:invalid,
+form select:invalid {
+    color: #f36c6c;
+    border: 5px solid #43CAD9;
+}
+
+form input:invalid + .message-erreur,
+form textarea:invalid + .message-erreur,
+form select:invalid + .message-erreur {
+    display: block;
+}
+
+form input:valid,
+form textarea:valid,
+form select:valid {
+    color: #101010;
+    border: 2px solid #43CAD9;
+}
+
+form input:focus {
+    border: 3px solid #D8E4F9;
+    box-shadow: 0 0 3px 3px #D8E4F9;
+    outline: none;
+}
+
+#menu-principal {
+    background-color: cornflowerblue;
+    display: flex;
+    left: -500px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30%;
+    padding: 3rem;
+    position: absolute;
+    transition: left 1s;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.btn-menu-fermer,
+.btn-menu-ouvert {
+    display: none;
+}
+
+#btn-menu:not(:checked) ~ .btn-menu-fermer {
+    display: block;
+}
+
+#btn-menu:checked ~ .btn-menu-ouvert {
+    display: block;
+}
+#btn-menu:checked ~ #menu-principal {
+    left: 0;
+}
+
+
+
+footer {
+    background-image: linear-gradient(to right,
+    #d8e4f982 0%,
+    #d8e4f982 50%,
+    #d8e4f982 100%),
+       url("../img/embossed-paper.png"); 
+       min-height: 30vh;
+
+    display: flex;
+}
+
+footer h2 {
+font-size: var(--texte-md);
+}
+
+footer img {
+    height: 3rem;
+   display: flex;
+   
+    
+}
